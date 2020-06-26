@@ -1,3 +1,10 @@
+## Prerequirements for running this commands
+
+- need install of [NodeJS](https://nodejs.org/en/) in v11.14.0 or higher
+- need install of [NPM](https://www.npmjs.com/get-npm) in v6.11.3 or higher
+- need install of [TypeScript](https://www.typescriptlang.org/) in v3.5.3 or higher
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
