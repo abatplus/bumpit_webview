@@ -1,27 +1,28 @@
 import React from 'react';
-import logo from './logo.svg';
 import 'fontsource-roboto';
 import './App.css';
-import Typography from '@material-ui/core/Typography';
+import { MuiThemeProvider, Paper, CssBaseline } from '@material-ui/core';
+import mainTheme from './theme/mainTheme';
+import Routings from './components/Routings';
+import Header from './components/Header';
+import Copyright from './components/Copyright';
 
 function App() {
   const locale = navigator.language;
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <Typography noWrap={true} variant={'h3'}>
-          Current locale: {locale}
-        </Typography>
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload. Current locale: {locale}
-        </p>
-        <a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
-          Learn React
-        </a>
-      </header>
-    </div>
+    <MuiThemeProvider theme={mainTheme}>
+      <CssBaseline />
+      <Header />
+      <main>
+        <Paper elevation={4} style={{ margin: '10px' }}>
+          <Routings />
+        </Paper>
+      </main>
+      <footer>
+        <Copyright />
+      </footer>
+    </MuiThemeProvider>
   );
 }
 
