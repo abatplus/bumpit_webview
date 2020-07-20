@@ -1,7 +1,7 @@
 import Typography from "@material-ui/core/Typography";
 import React from 'react';
 import { Theme, createStyles, makeStyles } from '@material-ui/core';
-// const Logo = require("../img/logo.png");
+import logo from '../img/logo.png';
 
 const useStylesCenterLogo = makeStyles((theme: Theme) =>
   createStyles({
@@ -26,7 +26,7 @@ export default function DisplayLogo() {
   const classes = useStylesCenterLogo()
 
   return <div className={classes.logoContainer}>
-    {/* <Logo className={classes.logo} /> */}
+    <img src={logo} className={classes.logo} alt="vSwap" />
     <Typography component="h1" variant="h3" className={classes.logoTypo}>vSwap</Typography>
   </div>
 }
@@ -54,7 +54,7 @@ export function HeaderLogo() {
   const classes = useStylesHeaderLogo()
 
   return <div className={classes.logoContainer}>
-    {/* <Logo className={classes.logo} /> */}
+    <img src={logo} className={classes.logo} alt="vSwap" />
     <Typography className={classes.logoTypo}>POWERED BY ABAT+</Typography>
   </div>
 }
@@ -84,7 +84,7 @@ export function LawLogo() {
   const classes = useStylesLawLogo()
 
   return <div className={classes.logoContainer}>
-    {/* <Logo className={classes.logo} /> */}
+    <img src={logo} className={classes.logo} alt="vSwap" />
     <Typography className={classes.logoTypo} component="h1" variant="h3">vSwap</Typography>
   </div>
 }
