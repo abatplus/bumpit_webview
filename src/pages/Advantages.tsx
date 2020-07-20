@@ -31,6 +31,7 @@ const useStyles = makeStyles((theme: Theme) =>
   }),
 );
 
+// TODO Add translation
 export default function Advantages() {
   const classes = useStyles()
 

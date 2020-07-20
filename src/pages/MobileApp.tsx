@@ -3,6 +3,9 @@ import { Grid, Theme, createStyles, makeStyles, Typography } from '@material-ui/
 
 import appstoreBadge from '../img/apple-appstore-badge.png';
 import playstoreBadge from '../img/google-play-badge.png';
+import IvCardTranslations from '../i18n/IvCardTranslations';
+import { useIntl } from 'react-intl';
+import { nameof } from '../utils';
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -74,13 +77,14 @@ const useStyles = makeStyles((theme: Theme) =>
 );
 
 export default function RegisterArea() {
+  const i18n = useIntl();
   const classes = useStyles()
 
   return (
     <Grid container item className={classes.registerContainer}>
       <Grid item xs={'auto'} md={2} />
       <Grid item xs={12} md={8}>
-        <Typography className={classes.title}>...Und für den Besucher genauso einfach</Typography>
+        <Typography className={classes.title}>...Lorem Ipsum</Typography>
       </Grid>
       <Grid item xs={'auto'} md={2} />
 
@@ -90,15 +94,15 @@ export default function RegisterArea() {
 
       <Grid item xs={'auto'} md={2} />
       <Grid item xs={12} md={6} className={classes.appstoreContainer}>
-        <Typography className={classes.title}>vSwap direkt downloaden</Typography>
+        <Typography className={classes.title}>{i18n.formatMessage({ id: nameof<IvCardTranslations>('Direct_Download') })}</Typography>
       </Grid>
       <Grid item xs={'auto'} md={4} />
       <Grid item xs={'auto'} md={2} />
       <Grid item xs={12} md={2} >
-        <img src={appstoreBadge} className={classes.appstoreButton} alt="vSwap im AppStore laden" />
+        <img src={appstoreBadge} className={classes.appstoreButton} alt={i18n.formatMessage({ id: nameof<IvCardTranslations>('Download_AppStore') })} />
       </Grid>
       <Grid item xs={12} md={2} >
-        <img src={playstoreBadge} className={classes.playstoreButton} alt="vSwap im Playstore laden" />
+        <img src={playstoreBadge} className={classes.playstoreButton} alt={i18n.formatMessage({ id: nameof<IvCardTranslations>('Download_Playstore') })} />
       </Grid>
       <Grid item xs={'auto'} md={6} />
       <Grid item xs={'auto'} md={4} />

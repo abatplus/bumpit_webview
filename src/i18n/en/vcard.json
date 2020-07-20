@@ -1,0 +1,65 @@
+{
+  "appTitle": {
+    "message": "vCard-Exchange"
+  },
+  "appName": {
+    "message": "abat+ Exchange"
+  },
+  "Legal_Information": {
+    "message": "Legal Information"
+  },
+  "Privacy_Protection": {
+    "message": "Privacy Protection"
+  },
+  "Help": {
+    "message": "Help"
+  },
+  "About": {
+    "message": "About"
+  },
+  "Name": {
+    "message": "Name"
+  },
+  "Company": {
+    "message": "Company"
+  },
+  "Position": {
+    "message": "Position"
+  },
+  "Street": {
+    "message": "Street"
+  },
+  "ZipCode": {
+    "message": "Zip Code"
+  },
+  "Phone": {
+    "message": "Phone number"
+  },
+  "Location": {
+    "message": "Location"
+  },
+  "Country": {
+    "message": "Country"
+  },
+  "Fax": {
+    "message": "Fax"
+  },
+  "Email": {
+    "message": "E-Mail"
+  },
+  "Website": {
+    "message": "Homepage"
+  },
+  "Terms_and_conditions": {
+    "message": "Terms and conditions"
+  },
+  "Direct_Download": {
+    "message": "vSwap direct download"
+  },
+  "Download_AppStore": {
+    "message": "download vSwap in AppStore"
+  },
+  "Download_Playstore": {
+    "message": "download vSwap in Playstore"
+  }
+}

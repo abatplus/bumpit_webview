@@ -23,6 +23,7 @@ const useStyles = makeStyles((theme: Theme) =>
   }),
 );
 
+// TODO Add translation
 export default function SiteHeader() {
   const classes = useStyles();
 
