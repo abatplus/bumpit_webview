@@ -76,7 +76,7 @@ const useStyles = makeStyles((theme: Theme) =>
   }),
 );
 
-export default function RegisterArea() {
+export default function DownloadArea() {
   const i18n = useIntl();
   const classes = useStyles()
 

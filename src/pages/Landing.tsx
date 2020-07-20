@@ -3,7 +3,7 @@ import { Grid, Theme, createStyles, makeStyles } from '@material-ui/core';
 
 import SiteHeader from './SiteHeader'
 import Advantages from './Advantages'
-import MobileApp from './MobileApp'
+import DownloadArea from './DownloadArea'
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -19,6 +19,6 @@ export default function Landing() {
   return <Grid container className={classes.landingContainer}>
     <SiteHeader />
     <Advantages />
-    <MobileApp />
+    <DownloadArea />
   </Grid>;
 }
