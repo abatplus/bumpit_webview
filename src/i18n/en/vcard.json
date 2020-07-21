@@ -1,0 +1,95 @@
+{
+  "appTitle": {
+    "message": "vCard-Exchange"
+  },
+  "appName": {
+    "message": "abat+ Exchange"
+  },
+  "Legal_Information": {
+    "message": "Legal Information"
+  },
+  "Privacy_Protection": {
+    "message": "Privacy Protection"
+  },
+  "Help": {
+    "message": "Help"
+  },
+  "About": {
+    "message": "About"
+  },
+  "Name": {
+    "message": "Name"
+  },
+  "Company": {
+    "message": "Company"
+  },
+  "Position": {
+    "message": "Position"
+  },
+  "Street": {
+    "message": "Street"
+  },
+  "ZipCode": {
+    "message": "Zip Code"
+  },
+  "Phone": {
+    "message": "Phone number"
+  },
+  "Location": {
+    "message": "Location"
+  },
+  "Country": {
+    "message": "Country"
+  },
+  "Fax": {
+    "message": "Fax"
+  },
+  "Email": {
+    "message": "E-Mail"
+  },
+  "Website": {
+    "message": "Homepage"
+  },
+  "Terms_and_conditions": {
+    "message": "Terms and conditions"
+  },
+  "Direct_Download": {
+    "message": "vSwap direct download"
+  },
+  "Download_AppStore": {
+    "message": "download vSwap in AppStore"
+  },
+  "Download_Playstore": {
+    "message": "download vSwap in Playstore"
+  },
+  "App_Slogan": {
+    "message": "the easy way to get into business"
+  },
+  "Time_Saving": {
+    "message": "Time saving"
+  },
+  "Time_Saving_Description": {
+    "message": "Save time in collecting and organizing business cards"
+  },
+  "No_Costs": {
+    "message": "No hidden costs"
+  },
+  "No_Costs_Description": {
+    "message": "vSwap is completely free to use"
+  },
+  "Data_Secure": {
+    "message": "Data secure"
+  },
+  "Data_Secure_Description": {
+    "message": "Your data will not be given third parties"
+  },
+  "Intuitive_Use": {
+    "message": "Intuitive use"
+  },
+  "Intuitive_Use_Description": {
+    "message": "Slim and modern design for fast usage"
+  },
+  "Easy_Quote": {
+    "message": "\"It was never so easy to exchange contact data!\""
+  }
+}

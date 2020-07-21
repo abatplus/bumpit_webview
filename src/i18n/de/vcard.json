@@ -1,0 +1,95 @@
+{
+  "appTitle": {
+    "message": "vCard-Exchange"
+  },
+  "appName": {
+    "message": "abat+ Exchange"
+  },
+  "Legal_Information": {
+    "message": "Impressum"
+  },
+  "Privacy_Protection": {
+    "message": "Datenschutz"
+  },
+  "Help": {
+    "message": "Hilfe"
+  },
+  "About": {
+    "message": "Über"
+  },
+  "Name": {
+    "message": "Name"
+  },
+  "Company": {
+    "message": "Firma"
+  },
+  "Position": {
+    "message": "Position"
+  },
+  "Street": {
+    "message": "Straße"
+  },
+  "ZipCode": {
+    "message": "Postleitzahl"
+  },
+  "Phone": {
+    "message": "Telefonnummer"
+  },
+  "Location": {
+    "message": "Stadt"
+  },
+  "Country": {
+    "message": "Land"
+  },
+  "Fax": {
+    "message": "Fax"
+  },
+  "Email": {
+    "message": "E-Mail"
+  },
+  "Website": {
+    "message": "Homepage"
+  },
+  "Terms_and_conditions": {
+    "message": "AGB"
+  },
+  "Direct_Download": {
+    "message": "vSwap direkt downloaden"
+  },
+  "Download_AppStore": {
+    "message": "vSwap im AppStore laden"
+  },
+  "Download_Playstore": {
+    "message": "vSwap im Playstore laden"
+  },
+  "App_Slogan": {
+    "message": "die einfach Art miteinander ins Geschäft zu kommen"
+  },
+  "Time_Saving": {
+    "message": "Zeitliche Ersparnis"
+  },
+  "Time_Saving_Description": {
+    "message": "Kein aufwändiges verwalten und sortieren von Visitenkarten"
+  },
+  "No_Costs": {
+    "message": "Keine versteckten Kosten"
+  },
+  "No_Costs_Description": {
+    "message": "vSwap ist komplett kostenlos"
+  },
+  "Data_Secure": {
+    "message": "Datensicherheit"
+  },
+  "Data_Secure_Description": {
+    "message": "Keine Weitergabe von Daten an dritte"
+  },
+  "Intuitive_Use": {
+    "message": "Intuitive Nutzung"
+  },
+  "Intuitive_Use_Description": {
+    "message": "Schlichter, moderner Aufbau für eine schnelle Bedienbarkeit"
+  },
+  "Easy_Quote": {
+    "message": "\"Das Austauschen von Kontakten ist endlich in diesem Jahrtausend angekommen!\""
+  }
+}
