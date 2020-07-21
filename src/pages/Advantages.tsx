@@ -1,6 +1,9 @@
 import React from 'react';
 import { Grid, Theme, createStyles, makeStyles, Typography } from '@material-ui/core';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { CallSplit, Schedule, TagFaces, TouchApp } from '@material-ui/icons';
+import { useIntl } from 'react-intl';
+import IvCardTranslations from '../i18n/IvCardTranslations';
+import { nameof } from '../utils';
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -31,31 +34,31 @@ const useStyles = makeStyles((theme: Theme) =>
   }),
 );
 
-// TODO Add translation
 export default function Advantages() {
+  const i18n = useIntl();
   const classes = useStyles()
 
   return <Grid container item className={classes.contentGrid}>
     <Grid item xs={'auto'} md={2} />
     <Grid item xs={12} md={2}>
-      {/* <FontAwesomeIcon className={classes.icon} icon={faClock} /> */}
-      <Typography className={classes.headerTypo}>Zeitliche Ersparnis</Typography>
-      <Typography className={classes.headerText}>Kein aufwändiges Archivieren und Aussortieren von Kontaktformularen</Typography>
+      <Schedule className={classes.icon} />
+      <Typography className={classes.headerTypo}>{i18n.formatMessage({ id: nameof<IvCardTranslations>('Time_Saving') })}</Typography>
+      <Typography className={classes.headerText}>{i18n.formatMessage({ id: nameof<IvCardTranslations>('Time_Saving_Description') })}</Typography>
     </Grid>
     <Grid item xs={12} md={2}>
-      {/* <FontAwesomeIcon className={classes.icon} icon={faHandHoldingBox} /> */}
-      <Typography className={classes.headerTypo}>Keine versteckten Kosten</Typography>
-      <Typography className={classes.headerText}>vSwap ist komplett kostenlos</Typography>
+      <TagFaces className={classes.icon} />
+      <Typography className={classes.headerTypo}>{i18n.formatMessage({ id: nameof<IvCardTranslations>('No_Costs') })}</Typography>
+      <Typography className={classes.headerText}>{i18n.formatMessage({ id: nameof<IvCardTranslations>('No_Costs_Description') })}</Typography>
     </Grid>
     <Grid item xs={12} md={2}>
-      {/* <FontAwesomeIcon className={classes.icon} icon={faUserShield} /> */}
-      <Typography className={classes.headerTypo}>DSGVO sicher</Typography>
-      <Typography className={classes.headerText}>Automatisches Löschen der Datensätze</Typography>
+      <CallSplit className={classes.icon} />
+      <Typography className={classes.headerTypo}>{i18n.formatMessage({ id: nameof<IvCardTranslations>('Data_Secure') })}</Typography>
+      <Typography className={classes.headerText}>{i18n.formatMessage({ id: nameof<IvCardTranslations>('Data_Secure_Description') })}</Typography>
     </Grid>
     <Grid item xs={12} md={2}>
-      {/* <FontAwesomeIcon className={classes.icon} icon={faStreetView} /> */}
-      <Typography className={classes.headerTypo}>Intuitive Nutzung</Typography>
-      <Typography className={classes.headerText}>Schlichter, moderner Aufbau für eine schnelle Bedienbarkeit</Typography>
+      <TouchApp className={classes.icon} />
+      <Typography className={classes.headerTypo}>{i18n.formatMessage({ id: nameof<IvCardTranslations>('Intuitive_Use') })}</Typography>
+      <Typography className={classes.headerText}>{i18n.formatMessage({ id: nameof<IvCardTranslations>('Intuitive_Use_Description') })}</Typography>
     </Grid>
     <Grid item xs={'auto'} md={2} />
   </Grid>

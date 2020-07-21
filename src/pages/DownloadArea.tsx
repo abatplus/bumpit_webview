@@ -84,7 +84,7 @@ export default function DownloadArea() {
     <Grid container item className={classes.registerContainer}>
       <Grid item xs={'auto'} md={2} />
       <Grid item xs={12} md={8}>
-        <Typography className={classes.title}>...Lorem Ipsum</Typography>
+        <Typography className={classes.title}>{i18n.formatMessage({ id: nameof<IvCardTranslations>('Easy_Quote') })}</Typography>
       </Grid>
       <Grid item xs={'auto'} md={2} />
 
