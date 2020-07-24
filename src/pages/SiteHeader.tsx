@@ -2,8 +2,7 @@ import React from 'react';
 import { Grid, Theme, createStyles, makeStyles, Typography } from '@material-ui/core';
 import { HeaderLogo } from './Logo';
 import { useIntl } from 'react-intl';
-import IvCardTranslations from '../i18n/IvCardTranslations';
-import { nameof } from '../utils';
+import { translate } from '../utils';
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -40,7 +39,7 @@ export default function SiteHeader() {
       <Typography className={classes.headerText}>
         <span className={classes.productName}>vSwap</span>
         <span> - </span>
-        <span>{i18n.formatMessage({ id: nameof<IvCardTranslations>('App_Slogan') })}</span>
+        <span>{translate(i18n, 'App_Slogan')}</span>
       </Typography>
     </Grid>
     <Grid item xs={'auto'} md={3} />
