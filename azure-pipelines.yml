@@ -1,29 +1,40 @@
-# Docker
-# Build a Docker image 
-# https://docs.microsoft.com/azure/devops/pipelines/languages/docker
-
 trigger:
-- master
+  - master
 
-resources:
-- repo: self
+pool:
+  vmImage: "ubuntu-latest"
 
 variables:
-  tag: '$(Build.BuildId)'
+  - group: Packaging_Credentials_Group
+  
+  - name: imageName
+    value: abatplus/vswap
+    
+  - name: serviceName
+    value: vswap-webview
+  - name: tag
+    value: '$(serviceName)-$(Build.SourceBranchName)-0.0.5'
+  - name: dockerFile
+    value: "./Dockerfile"
+  - name: buildContext
+    value: "./."
 
-stages:
-- stage: Build
-  displayName: Build image
-  jobs:  
-  - job: Build
-    displayName: Build
-    pool:
-      vmImage: 'ubuntu-latest'
-    steps:
-    - task: Docker@2
-      displayName: Build an image
-      inputs:
-        command: build
-        dockerfile: '$(Build.SourcesDirectory)/Dockerfile'
-        tags: |
-          $(tag)
+steps:
+  - task: Docker@2
+    displayName: "Docker Build"
+    inputs:
+      command: "build"
+      Dockerfile: $(dockerFile)
+      buildContext: $(buildContext)
+     # arguments: '--build-arg NPM_TOKEN=$(NPM_TOKEN) --build-arg FONT_AWESOME_TOKEN=$(FONT_AWESOME_TOKEN)'
+      repository: $(imageName)
+      tags: $(tag)
+
+  - task: Docker@2
+    condition: ne(variables['Build.Reason'], 'PullRequest')
+    displayName: "Docker Push"
+    inputs:
+      containerRegistry: 'DockerHub'
+      repository: $(imageName)
+      command: 'push'
+      tags: $(tag)
