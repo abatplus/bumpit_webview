@@ -2,8 +2,7 @@ import React from 'react';
 import { Grid, Theme, createStyles, makeStyles, Typography } from '@material-ui/core';
 import { CallSplit, Schedule, TagFaces, TouchApp } from '@material-ui/icons';
 import { useIntl } from 'react-intl';
-import IvCardTranslations from '../i18n/IvCardTranslations';
-import { nameof } from '../utils';
+import { translate } from '../utils';
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -42,23 +41,23 @@ export default function Advantages() {
     <Grid item xs={'auto'} md={2} />
     <Grid item xs={12} md={2}>
       <Schedule className={classes.icon} />
-      <Typography className={classes.headerTypo}>{i18n.formatMessage({ id: nameof<IvCardTranslations>('Time_Saving') })}</Typography>
-      <Typography className={classes.headerText}>{i18n.formatMessage({ id: nameof<IvCardTranslations>('Time_Saving_Description') })}</Typography>
+      <Typography className={classes.headerTypo}>{translate(i18n, 'Time_Saving')}</Typography>
+      <Typography className={classes.headerText}>{translate(i18n, 'Time_Saving_Description')}</Typography>
     </Grid>
     <Grid item xs={12} md={2}>
       <TagFaces className={classes.icon} />
-      <Typography className={classes.headerTypo}>{i18n.formatMessage({ id: nameof<IvCardTranslations>('No_Costs') })}</Typography>
-      <Typography className={classes.headerText}>{i18n.formatMessage({ id: nameof<IvCardTranslations>('No_Costs_Description') })}</Typography>
+      <Typography className={classes.headerTypo}>{translate(i18n, 'No_Costs')}</Typography>
+      <Typography className={classes.headerText}>{translate(i18n, 'No_Costs_Description')}</Typography>
     </Grid>
     <Grid item xs={12} md={2}>
       <CallSplit className={classes.icon} />
-      <Typography className={classes.headerTypo}>{i18n.formatMessage({ id: nameof<IvCardTranslations>('Data_Secure') })}</Typography>
-      <Typography className={classes.headerText}>{i18n.formatMessage({ id: nameof<IvCardTranslations>('Data_Secure_Description') })}</Typography>
+      <Typography className={classes.headerTypo}>{translate(i18n, 'Data_Secure')}</Typography>
+      <Typography className={classes.headerText}>{translate(i18n, 'Data_Secure_Description')}</Typography>
     </Grid>
     <Grid item xs={12} md={2}>
       <TouchApp className={classes.icon} />
-      <Typography className={classes.headerTypo}>{i18n.formatMessage({ id: nameof<IvCardTranslations>('Intuitive_Use') })}</Typography>
-      <Typography className={classes.headerText}>{i18n.formatMessage({ id: nameof<IvCardTranslations>('Intuitive_Use_Description') })}</Typography>
+      <Typography className={classes.headerTypo}>{translate(i18n, 'Intuitive_Use')}</Typography>
+      <Typography className={classes.headerText}>{translate(i18n, 'Intuitive_Use_Description')}</Typography>
     </Grid>
     <Grid item xs={'auto'} md={2} />
   </Grid>
