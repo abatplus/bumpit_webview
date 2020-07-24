@@ -2,8 +2,7 @@
 
 - need install of [NodeJS](https://nodejs.org/en/) in v11.14.0 or higher
 - need install of [NPM](https://www.npmjs.com/get-npm) in v6.11.3 or higher
-- need install of [TypeScript](https://www.typescriptlang.org/) in v3.5.3 or higher
-
+- need install of [TypeScript](https://www.typescriptlang.org/) in v3.9.5 or higher
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -18,11 +17,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.<br />
 You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `npm run build`
 
