@@ -1,7 +1,7 @@
 ## Third Party Notices
 
 This App uses third-party software or other resources that may be distributed under licenses different from the vSwap-webview T&C (Nutzungsbedingungen).
-In the event that we overlooked to list a required notice, please bring this to our attention by contacting us via email: vSwap-App@abatplus.de
+In the event that we overlooked to list a required notice, please bring this to our attention by contacting us via email: info@abatplus.de
 
 ## Third Party Code Components
 
