@@ -19,5 +19,5 @@ extends:
     serviceName: $(serviceName)
     branchName: $(Build.SourceBranchName)
     tag: "$(serviceName)-$(Build.SourceBranchName)-0.0.5"
-    dockerfile: "./src/Service.Dockerfile"
-    buildContext: "./src/."
+    dockerfile: "./Dockerfile"
+    buildContext: "./."
